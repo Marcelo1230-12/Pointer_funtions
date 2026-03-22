@@ -39,3 +39,11 @@ its possible to return a pointer in a funtion lets take as a example the coode a
         return 0;
         }
 the out put is 9.
+
+C provides four special functions for you to dynamically allocate (and release) memory, provided it is available. They are:
+These functions are stored in the stdlib library. To use them, you must import this library.
+  
+        malloc()	Use this function to reserve as many bytes as you want on the heap
+        calloc()	Use this function to reserve memory for some number of ints, doubles, or any other data type.
+        realloc()	Use this function to expand or contract a block of reserved memory (reserved by either malloc() or calloc()).
+        free()	Use this function to release previously allocated memory.
